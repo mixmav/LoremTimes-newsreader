@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Times of Lorem</title>
+	<meta name="theme-color" content="white">
+	<link rel="shortcut icon" type="img/png" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/reader.css">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+</head>
+<body>
+
+	<div class="load-page">
+		<div class="preloader-wrapper big active loader-spinner">
+		    <div class="spinner-layer loader-spinner-color">
+		      <div class="circle-clipper left">
+		        <div class="circle"></div>
+		      </div><div class="gap-patch">
+		        <div class="circle"></div>
+		      </div><div class="circle-clipper right">
+		        <div class="circle"></div>
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+	<div id="info-modal" class="modal modal-fixed-footer">
+		<div class="modal-content">
+			<h1>About the News Reader</h1>
+			<br/>
+
+			<h2>Features</h2>
+			<p>
+				<b>1) Scrolling:</b> This reader features a custom scrolling function. After every article, it scrolls horizontally, giving it a newspaper like look.<br/>
+				<b>2) Easy to Use:</b> The UI has many features like Full-Screen Mode, Zooming, Article Switching for the users' convenience.<br/>
+				<b>3) Customizable</b>: The user can switch between the light and the dark mode. The dark mode is specially designed for long reading hours. The primary color of the reader can also be decided by the user.<br/>
+				<b>4) Mobile Compatible:</b> Works smoothly on all modern browsers irrespective of the device.<br/>
+				<b>And Many More</b> like parallax image scrolling, go to home button, automatic date adjustment, storing the users' preference using cookies.
+			</p>
+			<br/>
+
+
+			<h2>Languages Used</h2>
+			<p>
+				HTML<br/>
+				CSS<br/>
+				JavaScript
+			</p>
+			<p>
+				<b>JavaScript Library:</b> jQuery
+			</p>
+			<p>
+				<b>jQuery Plugins:</b><br/>
+				<b>bez</b> - for creating jQuery easing function for animations using cubic bezier <a href="https://github.com/rdallasgray/bez" target="_blank">Link</a><br/>
+				<b>MaterializeCSS</b> - for making components as per the Material Design guidelines by Google <a href="http://materializecss.com/" target="_blank">Link</a>
+			</p><br/>
+
+			<h2>Cookies</h2>
+			<p>
+				This website uses cookies to ensure you get the best experience on our website.
+			</p>
+			<br/>
+
+			<h2>Made By</h2>
+			<p>
+				Ishpreet Singh Bhasin<br/>
+				Manav Singh Gadhoke<br/>
+				<b>SCHOOL:</b> Bal Bharati Public School, Pitampura
+			</p><br/>
+
+			<p>&copy; This is just a demo website made for G@teway 2016 competition prelims.</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class=" modal-action modal-close waves-effect btn-flat">OK</a>
+		</div>
+	</div>
+
+	<div id="color-modal" class="modal modal-fixed-footer">
+		<div class="modal-content">
+			<h1>Choose Reader Color</h1>
+			<div class="color-buttons">
+			</div>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class=" modal-action modal-close waves-effect btn-flat">OK</a>
+			<a href="#!" class=" modal-action modal-close waves-effect btn-flat color-reset">Reset Default</a>
+		</div>
+	</div>
+
+	<div class="topbar">
+		<div class="bar-button prev"><i class="material-icons left">arrow_back</i>			
+		</div><div class="bar-text title">{Title}
+		</div><div class="bar-button next"><i class="material-icons left">arrow_forward</i>
+		</div>
+	</div>
+
+
+	<div class="sidebar">
+		<div class="bar-text logo">The Times of Lorem</div>
+		<hr/>
+		<div class="bar-text currDate"></div>
+		<hr/>
+		<div class="bar-button home"><i class="material-icons left">home</i></div>
+		<div class="bar-button theme"><i class="material-icons left">lightbulb_outline</i></div>
+		<div class="bar-button color-pop-button"><a class="modal-trigger" href="#color-modal"><i class="material-icons left">color_lens</i></a></div>
+		<div class="bar-button"><a class="modal-trigger" href="#info-modal"><i class="material-icons left">info_outline</i></a></div>
+		<hr/>
+		<div class="shadow-test z-depth-1"></div>
+	</div>
+          
+
+	<div class="bottombar">
+		<div class="bar-button menu"><i class="material-icons left">menu</i>
+		</div><div class="zoom">
+			<div class="bar-button ZoomOut"><i class="material-icons left">zoom_out</i>
+			</div><div class="bar-text ZoomText">100%
+			</div><div class="bar-button ZoomIn"><i class="material-icons left">zoom_in</i></div>
+		</div><div class="bar-button FullScreen" id="FullScreen"><i class="material-icons left">fullscreen</i>
+		</div>
+	</div>
+
+	<div class="hor">
+		<div class="ver">
+			<div class="home-page">
+				<div class="home-content">
+					<h1>Welcome!</h1>
+					<p>Scroll Down To Continue</p>
+					<p><i class="material-icons home-down">keyboard_arrow_down</i></p>
+				</div>
+				<div class="home-image"></div>
+			</div>
+		</div>
+		<div class="ver">
+			<div class="plx" plx-img="brexit.jpg"></div>
+			<div class="news-head"><h1>Brexit causes dramatic drop in economy, data suggests</h1></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+		</div>
+		<div class="ver">
+			<div class="plx" plx-img="trump.jpg"></div>
+			<div class="news-head"><h1>US election: Donald Trump promises a 'safer' America</h1></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+		</div>
+		<div class="ver">
+			<div class="plx" plx-img="indian_air.jpg"></div>
+			<div class="news-head"><h1>India launches massive search operation for missing military plane</h1></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+		</div>
+		<div class="ver">
+			<div class="plx" plx-img="pokemon.jpg"></div>
+			<div class="news-head"><h1>Pokemon Go finally launches in Japan</h1></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+			<div class="page"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.bez.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/reader.js"></script>
+</body>
+</html>
